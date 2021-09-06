@@ -10,9 +10,10 @@ Rails.application.routes.draw do
       sessions: 'partners_office/partners/sessions',
       registrations: 'partners_office/partners/registrations',
       confirmations: 'partners_office/partners/confirmations',
-      passwords: 'partners_office/partners/passwords'
+      passwords: 'partners_office/partners/passwords',
+      unlocks: 'partners_office/partners/unlocks'
     }
-    resources :partners, only: :index 
+    resources :partners, only: :index
   end
   root to: 'static_pages#landing_page'
 end

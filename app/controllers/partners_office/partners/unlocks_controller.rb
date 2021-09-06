@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+module PartnersOffice
 class Partners::UnlocksController < Devise::UnlocksController
   # GET /resource/unlock/new
   # def new
@@ -27,4 +27,5 @@ class Partners::UnlocksController < Devise::UnlocksController
   # def after_unlock_path_for(resource)
   #   super(resource)
   # end
+end
 end
