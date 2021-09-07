@@ -1,12 +1,12 @@
-  <form class="row g-3">
+  <form class="row g-3 form">
     <%= form_for(resource, as: resource_name, url: new_partners_office_partner_session_path(resource_name)) do |f| %>
     <div class="col-md-6">
       <%= f.label :email, class: "form-label" %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", id: "inputEmail4"  %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control form-input-shadow", id: "inputEmail4"  %>
     </div>
     <div class="col-md-6">
       <%= f.label :password, class: "form-label" %>
-      <%= f.password_field :password, autocomplete: "current-password", class: "form-control", id: "inputPassword4" %>
+      <%= f.password_field :password, autocomplete: "current-password", class: "form-control form-input-shadow", id: "inputPassword4" %>
     </div>
     <% if devise_mapping.rememberable? %>
       <div class="col-12">
@@ -17,6 +17,6 @@
     <div class="col-12 text-center">
       <%= f.submit "Se connecter", class: "btn btn-primary" %>
     </div>
+      <%= render "partners_office/partners/shared/links" %>
     <% end %>
   </form>
-  <%= render "partners_office/partners/shared/links" %>
