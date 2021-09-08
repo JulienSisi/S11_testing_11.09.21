@@ -8,6 +8,13 @@ module PartnersOffice
     #   super
     # end
 
+    #def index
+    #  @session = session[:partner_id]
+    #  @partners = Partner.all
+    #end
+
+
+
     # POST /resource/sign_in
     # def create
     #   super
