@@ -37,4 +37,227 @@
    font-size: 30px;
  }
 
+/* The gallery pages grid */
 
+ .rt-profile-card {
+	max-width: 400px;
+  max-height: 300px;
+	background-color: #FFF;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	background-position: center;
+	overflow: hidden;
+	position: relative;
+	margin: 5px auto;
+	cursor: pointer;
+	border-radius: 10px;
+  text-align: left;
+
+}
+
+.row{
+   
+  margin-left:10px;
+}
+
+.rt-profile-card img.full-width {
+	transition: all linear 0.25s;
+	width: 100%;
+	height: auto;
+}
+
+.rt-profile-card .rt-profile-body {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	transition: all linear 0.25s;
+}
+
+.rt-profile-card .rt-profile-name {
+	font-size: 30px;
+	line-height: 1;
+	color: #FFF;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	position: relative;
+	transition: all 400ms ease-out;
+	text-transform: uppercase;
+  text-indent: 50px;
+}
+
+.rt-profile-card .rt-profile-text {
+	visibility: hidden;
+	opacity: 0;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #FFF;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+	height: unset;
+	transition: all linear 0.25s;
+}
+
+.rt-profile-card:hover .rt-profile-body {
+	bottom: 30px;
+}
+
+.rt-profile-card:hover .rt-profile-name {
+	color: #173EF1;
+}
+
+.rt-profile-card .rt-profile-name::before,
+.rt-profile-card .rt-profile-name::after {
+	content: "";
+	display: inline-block;
+	background: #fff;
+	border-radius: 20px;
+	width: 120px;
+	height: 2px;
+	margin-right: 0;
+	margin-left: 0;
+	transition: all 250ms ease-in;
+}
+
+.rt-profile-card .rt-profile-name::before {
+	position: absolute;
+	left: 0;
+	top: -7px;
+	transform: translateX(0);
+}
+
+.rt-profile-card .rt-profile-name::after {
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	transform: translateX(-200px);
+}
+
+.rt-profile-card:hover .rt-profile-name::before {
+	content: "";
+	background: #173EF1;
+	transform: translateX(-200px);
+}
+
+.rt-profile-card:hover .rt-profile-name::after {
+	content: "";
+	background: #173EF1;
+	transform: translateX(0);
+}
+
+.rt-profile-card:hover  {
+	visibility: visible;
+	opacity: 1;
+	transition: all 400ms ease-out;
+	height: initial;
+}
+
+@media (max-width: 768px) {
+	.rt-profile-card .rt-profile-body {
+		bottom: 30px;
+	}
+	.rt-profile-card  {
+		visibility: visible;
+		opacity:1;
+		height: initial;
+	}
+	.rt-profile-card .rt-profile-name::before {
+		display: none;
+	}   
+	.rt-profile-card .rt-profile-name::after {
+		position: absolute;
+		left: 0;
+		bottom: -7px;
+		transform: translateX(0);
+	}
+}
+
+
+/*  Centerd text1   */
+
+html {
+  background: #eff0ef;
+}
+
+h1 {
+  font-size: 16px; 
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-quote {
+    font-size: 16px;
+}
+
+.testimonial-quote blockquote {
+    /* Negate theme styles */
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    color: gray;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.4 !important;
+    margin: 0;
+    position: relative;
+    text-shadow: 0 1px white;
+    z-index: 600;
+}
+
+.testimonial-quote blockquote * {
+    box-sizing: border-box; 
+}
+
+.testimonial-quote blockquote p {
+    color: #75808a; 
+    line-height: 1.4 !important;
+}
+
+.testimonial-quote blockquote p:first-child:before {
+    content: '\201C';
+    color: #81bedb;
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    left: -.2em;    
+    text-shadow: none;
+    z-index: -300;
+}
+
+
+.testimonial-quote cite {
+    color: gray;
+    display: block;
+    font-size: .8em; 
+}
+  
+.testimonial-quote cite span {
+    color: #5e5e5e;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 1px white; 
+}
+
+.testimonial-quote {
+    position: relative; 
+}
+
+.testimonial-quote .quote-container {
+    padding-left: 100px; 
+}
+  
+.testimonial-quote.right .quote-container {
+    padding-left: 0;
+    padding-right: 160px; 
+}
+
+
+
+/* End gallery Cards */
