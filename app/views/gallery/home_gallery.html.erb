@@ -1,7 +1,54 @@
-<h1>Gallery#home_gallery</h1>
+<!-- SLIDE THEE ARTISTS -->
+        <div class="w3-content w3-display-container">
+            <div class="mySlides">
+             <div class="box">
+                <img  src="https://www.forbes.fr/wp-content/uploads/2021/03/mtart-obvious-20200109-73bw-2-740x490.jpg" style="width:100%">
+                <span><h3>Pierre Fautrel, Hugo Caselles-Dupré et Gauthier Vernier</h3><br><p>sont amis, amateurs d’art et passionnés d’IA. Véritables pionniers dans ce domaine, ils explorent le potentiel créatif de l’IA à travers des œuvres d’art nées d’algorithmes<br></p></span>
+            </div>
+            </div>
+            <div class="mySlides">
+            <div class="box">
+                <img src="https://www.artshebdomedias.com/wp-content/uploads/web_Corps-reseau-bis---2002-1200x903.jpg" style="width:100%">
+                 <span ><h3>Fred Forest </h3><br><p>Artiste français espère battre le record de l'œuvre numérique la plus chère au monde<br> </p></span>
+            </div>
+            </div>
+            <div class="mySlides">
+            <div class="box">
+                 <img src="https://static.cnews.fr/sites/default/files/styles/image_640_360/public/nft_-_la_premiere_vente_dart_aux_encheres_en_france_aura_lieu_dimanche_609bc2a6b490b_0.jpg?itok=l31OEpvM" style="width:100%">
+                 <span><h3>NEW FRENCH TOUCH </h3><br><p>Collectif anonyme, d’artistes et de financiers qui a pour objectif de créer et commercialiser des NFT artistiques.<br> </p></span>
+           </div>
+           </div>
+            
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+<br/><br/>
 
- <!--  <div class="rt-profile-card"><img src="./public/images/img1.jpg" class="full-width img-fluid"> -->
-  <br/><br/>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+<!-- SLIDE END -->
+
+
+<div class="container-gallery">
 
 <div class="row">
     <div class="col-6 col-md-4">
@@ -16,25 +63,25 @@
     </div>
  
     <div class="col-6 col-md-4">
-                <a href="yellowkorner.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://yellowkorner.com" target="_blank" rel="noopener noreferrer">
                 <div class="rt-profile-card"><img src="https://storage.googleapis.com/yk-cdn/photos/plp/ruslan-bolgov/duality-ii.jpg" class="full-width img-fluid">
                     <div class="rt-profile-body">
                 </a>    
                         <div class="rt-profile-name">  YellowKorner</div>
                     </div>
                 </div>
-                        <p>Créée en 2006 par deux passionnés de photographie, Alexandre de Metz et Paul-Antoine Briat, YellowKorner repose sur une équation très simple : augmenter le nombre d'exemplaires d'une photographie d'art pour la rendre accessible au plus grand nombre. Ainsi, au lieu de proposer 10 tirages à 5 000 euros, elle choisit d'en éditer 1 000 à 50 €. Actuellement YellowKorner présente un large panorama de la photographie contemporaine à travers le monde.</p>
+                        <p>Créée en 2006 par deux passionnés de photographie, Alexandre de Metz et Paul-Antoine Briat, YellowKorner repose sur une équation très simple : augmenter le nombre d'exemplaires d'une photographie d'art pour la rendre accessible au plus grand nombre. Ainsi, au lieu de proposer 10 tirages à 5 000 euros, elle choisit d'en éditer 1 000 à 50 €. Actuellement YellowKorner présente un large panorama de la photographie contemporaine à travers le monde. </p>
     </div>
 
     <div class="col-6 col-md-4">
-                <a href="catch-gallery.com" target="_blank" rel="noopener noreferrer">
-                <div class="rt-profile-card"><img src="https://resize-elle.ladmedia.fr/r/625,,forcex/crop/625,437,center-middle,forcex,ffffff/img/var/plain_site/storage/images/deco/news-tendances2/sites-blogs/boutiques-et-sites-de-vente-en-ligne-d-art/c-a-tch-gallery-com/69306727-1-fre-FR/C-A-TCH-Gallery.com.jpg" class="full-width img-fluid">
+                <a href="https://www.plazzart.com/fr_FR" target="_blank" rel="noopener noreferrer">
+                <div class="rt-profile-card"><img src="https://achetezdelart.com/wordpress/wp-content/uploads/plazzart.png" class="full-width img-fluid">
                     <div class="rt-profile-body">
                 </a>    
                         <div class="rt-profile-name"> C-A-TCH Gallery.com </div>
                     </div>
                 </div>
-                <p>Cette galerie en ligne joue la carte de l’émotion et de l’avant-garde en proposant des œuvres accessibles à tous. Les artistes C-A-TCH Gallery.com sont soigneusement sélectionnés par l'équipe en fonction de leurs formations, expositions, prix remportés… Ils valident ensemble le développement des œuvres dans un laboratoire en Allemagne. A noter qu'à l'acquisition de l’œuvre, l'acheteur recevra un certificat qui prouvera que la pièce est numérotée et en édition limitée.</p>
+                <p>Plazzart (ex LotPrivé) est un site d’achat et vente en ligne d’œuvres d’art, antiquités et bijoux, qui permet aux internautes de chiner des objets d’art et de collection, tous expertisés par des maisons de ventes, et de rendre ainsi l’achat d’art plus accessible. Le site, fondé en 2012 par Vincent Hutin, se présente comme une offre très large avec plus de 10 000 objets d’art et de luxe en vente, à prix fixe – de 100 à 200 000 EUR..</p>
     </div>           
 
 </div> 
@@ -124,17 +171,16 @@
 
 
     <div class="col-3 col-md-2">   
-________________
-
+        <p>Stefanie Harig et Marc Ullrich ont fondé Lumas à la suite d'une rencontre marquante avec un marchand d'art à New York à la fin des années 90. Après avoir crée une trentaine de galeries au total partout dans le monde, ils ont fait de Lumas une galerie en ligne spécialisée dans la photographie contemporaine. Elle propose plus de 1 800 œuvres de quelque 200 artistes établis et des talents prometteurs. </p>
     </div>
 
     <div class="col-6 col-md-4"> 
 
-            <a href="https://www.artsper.com/">
-            <div class="rt-profile-card"><img src="https://media.artsper.com/artwork/1206060_1_m.jpg">
+            <a href="https://fr.lumas.com/" target="_blank" rel="noopener noreferrer">
+            <div class="rt-profile-card"><img src="https://resize-elle.ladmedia.fr/alias/original/img/var/plain_site/storage/images/media/images/lumas-image_3/69306817-1-fre-FR/Lumas-image_3.jpg" class="full-width img-fluid">
                     <div class="rt-profile-body">
             </a>
-                        <div class="rt-profile-name">  Artsper</div>
+                        <div class="rt-profile-name">  Lumas</div>
                     </div>
             </div>
     </div>
@@ -162,39 +208,41 @@ ________________
 
 <div class="row">
     <div class="col-6 col-md-4">
-                <a href="www.art.fr">
-                <div class="rt-profile-card"><img src="https://imgc.artprintimages.com/img/print/john-james-audubon-great-blue-heron_u-l-f33bpe0.jpg?artWidth=300&artHeight=300" class="full-width img-fluid">
+                <a href="https://www.artgeneration.fr/" target="_blank" rel="noopener noreferrer">
+                <div class="rt-profile-card"><img src="https://www.artgeneration.fr/acatalog/xVIDIZ,P20Technique,P20mixte,P20sur,P20bois,P20sous,P20verre,P20,P20TA9F69249p.jpg.pagespeed.ic.e4EyBGXyh9.webp" class="full-width img-fluid">
                     <div class="rt-profile-body">
                 </a>    
-                        <div class="rt-profile-name">  ART.FR</div>
+                        <div class="rt-profile-name">  Art Generation</div>
                     </div>
                 </div>
-                        <p>Véritable géant dans le domaine de la vente d'art en ligne, Art.fr est la copie conforme de son grand frère américain, Art.com, leader dans le domaine de la décoration murale. Art.fr offre la possibilité au grand public de s'offrir une reproduction de qualité d'une toile d'un grand maître. Le site dispose d'un catalogue complètement fou de Picasso à Van Gogh, en passant par Niki De Saint Phalle ou Jean-Michel Basquiat.</p>
+                        <p>Crée en 2004, la galerie Art Génération c'est d'abord une galerie physique dans Le Marais à Paris qui affiche dès son origine son désir de rendre accessible l'art contemporain au plus grand nombre. Au départ, il s'agit de présenter dans un même lieu une centaine d'artistes au talent reconnu ou prometteur représentant la diversité de la création contemporaine à travers la peinture, la photographie, la sculpture, ou encore l'art vidéo. Par la suite, la galerie a décidé de développer le shopping en ligne avec un site Internet.</p>
     </div>
  
     <div class="col-6 col-md-4">
-                <a href="yellowkorner.com">
-                <div class="rt-profile-card"><img src="https://storage.googleapis.com/yk-cdn/photos/plp/ruslan-bolgov/duality-ii.jpg" class="full-width img-fluid">
+                <a href="https://www.juniqe.fr" target="_blank" rel="noopener noreferrer">
+                <div class="rt-profile-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKVSJZLmm-lEydLl-fC5MwGikt2_pY538Qp16Sry6De2K4NSgh7Eb4CKGEuUO_QPV9mU&usqp=CAU" class="full-width img-fluid">
                     <div class="rt-profile-body">
                 </a>    
-                        <div class="rt-profile-name">  YellowKorner</div>
+                        <div class="rt-profile-name">  Juniqe.com </div>
                     </div>
                 </div>
-                        <p>Créée en 2006 par deux passionnés de photographie, Alexandre de Metz et Paul-Antoine Briat, YellowKorner repose sur une équation très simple : augmenter le nombre d'exemplaires d'une photographie d'art pour la rendre accessible au plus grand nombre. Ainsi, au lieu de proposer 10 tirages à 5 000 euros, elle choisit d'en éditer 1 000 à 50 €. Actuellement YellowKorner présente un large panorama de la photographie contemporaine à travers le monde.</p>
+                        <p>Les affiches connaissent un franc succès dans nos intérieurs depuis quelques années. Une tendance qui n’a pas échappé à Juniqe.com, boutique en ligne qui en a fait sa spécialité. Sous forme de tirages d’art, toiles ou verre acrylique, les créations des différents artistes sont également déclinées sur des accessoires ou des vêtements. Le tout a des prix plus qu'accessibles.</p>
     </div>
 
     <div class="col-6 col-md-4">
-                <a href="catch-gallery.com">
-                <div class="rt-profile-card"><img src="https://resize-elle.ladmedia.fr/r/625,,forcex/crop/625,437,center-middle,forcex,ffffff/img/var/plain_site/storage/images/deco/news-tendances2/sites-blogs/boutiques-et-sites-de-vente-en-ligne-d-art/c-a-tch-gallery-com/69306727-1-fre-FR/C-A-TCH-Gallery.com.jpg" class="full-width img-fluid">
+                <a href="https://www.repro-tableaux.com/" target="_blank" rel="noopener noreferrer">
+                <div class="rt-profile-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP15d-IwIxO1YnC77fFKzS_DRjucARQUIadw&usqp=CAU" class="full-width img-fluid">
                     <div class="rt-profile-body">
                 </a>    
-                        <div class="rt-profile-name"> C-A-TCH Gallery.com </div>
+                        <div class="rt-profile-name"> Repro Tableaux.com </div>
                     </div>
                 </div>
-                <p>Cette galerie en ligne joue la carte de l’émotion et de l’avant-garde en proposant des œuvres accessibles à tous. Les artistes C-A-TCH Gallery.com sont soigneusement sélectionnés par l'équipe en fonction de leurs formations, expositions, prix remportés… Ils valident ensemble le développement des œuvres dans un laboratoire en Allemagne. A noter qu'à l'acquisition de l’œuvre, l'acheteur recevra un certificat qui prouvera que la pièce est numérotée et en édition limitée.</p>
+                <p>Comme son nom le laisse supposer, Repro Tableaux.com reproduit fidèlement les tableaux et les photographies des grands maîtres de la peinture et de la photographie. Sur toile, bois, plexiglas ou papier peint intissé, cette boutique d'art en ligne offre la possibilité à chacun de s'offrir une célèbre toile sous le format de son choix. Le site se veut d’une qualité irréprochable pour vous permettre de posséder un Picasso, un Dali ou un Klimt.</p>
+
     </div>           
 
 </div> 
+</div>
 
 
 

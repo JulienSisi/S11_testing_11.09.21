@@ -37,7 +37,44 @@
    font-size: 30px;
  }
 
+/*Slide */
+
+.container_slide{
+
+  Width: 100%;
+  margin:auto;
+  align-items: center;
+}
+
+.box{
+      position: relative;
+      font-family: Arial;
+  }
+
+
+
+span{     
+  
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+/*  End Slide   */
+
+
+
 /* The gallery pages grid */
+
+.container-gallery{
+  width: 97%;
+  margin: auto;
+
+}
 
  .rt-profile-card {
 	max-width: 400px;
@@ -47,17 +84,13 @@
 	background-position: center;
 	overflow: hidden;
 	position: relative;
-	margin: 5px auto;
 	cursor: pointer;
 	border-radius: 10px;
   text-align: left;
 
 }
 
-.row{
-   
-  margin-left:10px;
-}
+
 
 .rt-profile-card img.full-width {
 	transition: all linear 0.25s;
@@ -261,3 +294,5 @@ h1 {
 
 
 /* End gallery Cards */
+
+
