@@ -13,13 +13,17 @@
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign in</a>
+          <a class="nav-link" href="/users/sign_in">Sign in</a>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign up</a>
+          <a class="nav-link" href="/users/sign_up">Sign up</a>
         <li class="nav-item">
-          <a class="nav-link" href="#" , destroy_user_session_path, method: :delete>Sign out</a>
+          <a class="nav-link" href="/users/sign_out" , destroy_user_session_path, method: :delete>Sign out</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+  
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
