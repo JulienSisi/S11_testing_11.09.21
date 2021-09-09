@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'static_pages/landing_page'
+  root to: 'static_pages#landing_page'
   devise_for :admins
   devise_for :users
- # root to: "home#index"
   
   namespace :partners_office do
     devise_for :partners, controllers: {
@@ -14,6 +13,8 @@ Rails.application.routes.draw do
       unlocks: 'partners_office/partners/unlocks'
     }
     resources :partners, only: :index
+    get '/dashboard', to: 'static_pages#dashboard'
+    get '/partner_profile', to: 'static_pages#partner_profile'
   end
-  root to: 'static_pages#landing_page'
+
 end
