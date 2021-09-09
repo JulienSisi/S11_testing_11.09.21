@@ -11,6 +11,11 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  # 
+  def edit
+    @user = User.edit
+  end
+
   # PATCH/PUT /users/1 or /users/1.json
   def update
     user = User.find(params[:id])
