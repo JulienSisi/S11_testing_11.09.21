@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'gallery/home_gallery'
+  resources :events
+  
   devise_for :admins
   devise_for :users
- # root to: "home#index"
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
 
+  root to: "static_pages#landing_page"
 end
