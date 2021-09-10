@@ -1,30 +1,38 @@
 
-<div class="container">
-<h2>Log in</h2>
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <%= render "devise/shared/links" %>
-
-<form action="/action_page.php">
-  <div class="form-group">
-    <%= f.label :email %><br />
-    <input type="email" class="form-control" id="email">
-  </div>
-  
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-    
-  
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-     <% if devise_mapping.rememberable? %>
-    
-      
-    </div>
+<div class="test">
+  <img class="image-background" src='https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?cs=srgb&dl=pexels-markus-spiske-1089438.jpg&fm=jpg'>
+  <h2>Sign in</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control', placeholder: "Enter password" %>
+      </div>
+      <div class="form-group remember">
+        <% if devise_mapping.rememberable? %>
+        <%= f.label :remember_me, class: 'checkbox' do %>
+          <%= f.check_box :remember_me %> Remember me
+          <% end %>
+        <% end %>
+        <%= f.submit "Sign in", class: 'btn btn-success form' %>
+      </div>
+      <div class="form-group">
+        <%= render "devise/shared/links" %>
+      </div>
       <% end %>
-    <button type="submit" class="btn btn-default">Submit</button>
-</form>
+    </div>
+  </div>
 </div>
-    <% end %>
+
+<%= render "devise/shared/error_messages", resource: resource %>
+  
+    
+
 
     
