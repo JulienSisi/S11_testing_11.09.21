@@ -1,27 +1,32 @@
 class EventsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:show]
   before_action :set_event, only: %i[ show edit update destroy ]
 
   # GET /events or /events.json
   def index
     @events = Event.all
+    @user = current_user
   end
 
   # GET /events/1 or /events/1.json
   def show
+    @user = current_user
   end
 
   # GET /events/new
   def new
     @event = Event.new
+    @user = current_user
   end
 
   # GET /events/1/edit
   def edit
+    @user = current_user
   end
 
   # POST /events or /events.json
   def create
+    
     @event = Event.new(event_params)
 
     respond_to do |format|
@@ -61,6 +66,10 @@ class EventsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_event
       @event = Event.find(params[:id])
+    end
+
+    def current_user
+      
     end
 
     # Only allow a list of trusted parameters through.

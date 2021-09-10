@@ -5,7 +5,7 @@ class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-         
+  has_many :events
 
   def welcome_send
     ContactMailer.welcome(self).deliver_now

@@ -9,6 +9,7 @@
       <th>Description</th>
       <th>Price</th>
       <th>Location</th>
+      <!--<th>Event maker </th>-->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,8 +19,10 @@
       <tr>
         <td><%= event.title %></td>
         <td><%= event.description %></td>
-        <td><%= event.price %></td>
+        <td><%= event.price %> <strong>€</strong> </td>
         <td><%= event.location %></td>
+        <!--<td><%= event.user_id %></td>-->
+        <%#= if current_user?:admin %>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
