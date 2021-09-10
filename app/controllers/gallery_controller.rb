@@ -1,4 +1,5 @@
 class GalleryController < ApplicationController
-  def home_gallery
+  def index
   end
+  
 end

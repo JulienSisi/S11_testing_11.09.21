@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :events
-  
+  resources :gallery
   devise_for :admins
   devise_for :users
   devise_scope :user do
