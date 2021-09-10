@@ -4,17 +4,16 @@
   	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<%= csrf_meta_tags %>
-    	<%= csp_meta_tag %>
-    	<%= stylesheet_link_tag    'application' %>
-    	<%= javascript_include_tag 'application' %>
-		
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  	</head>
-	<body>
+		<%= csp_meta_tag %>
+		<%= stylesheet_link_tag    'application' %>
+		<%= javascript_include_tag 'application' %>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<title>NftCakeLab</title>
-	  <%= render "static_pages/navbar"%>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    		
-	<%= yield %>
+  </head>
+	<body>
+		<%= render "static_pages/navbar"%>
+		<%= yield %>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    		
   </body>
 </html>
 
