@@ -1,8 +1,9 @@
   <form class="row g-3 form" >
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= render "devise/shared/error_messages", resource: resource %>
+    <%= form_for(resource, url: new_partners_office_partner_registration_path) do |f| %>
+    <%= render "partners_office/partners/shared/error_messages", resource: resource %>
     <div class="col-md-6">
       <%= f.label :email, class: "form-label" %><br />
+      <%= resource.inspect %>
       <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control form-input-shadow", id: "inputEmail4"  %>
     </div>
     <div class="col-md-6">
@@ -19,6 +20,6 @@
     <div class="col-12">
       <%= f.submit "register", class: "btn btn-primary" %>
     </div>
-    <%= render "devise/shared/links" %>
+    <%= render "partners_office/partners/shared/links" %>
     <% end %>
   </form>
