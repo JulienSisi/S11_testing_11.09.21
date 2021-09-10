@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <!-- a implémenter ulterieurement -->
+ 
           <% if user_signed_in? %>
           <%= link_to "Edit account", edit_user_registration_path %>
           <%= link_to "Log out", destroy_user_session_path, method: :delete%>
@@ -33,9 +33,3 @@
           <%= link_to "Sign Up", new_user_registration_path %>
         <% end %>
 </nav>
-
-
-  
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
