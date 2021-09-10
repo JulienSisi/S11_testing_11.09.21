@@ -1,17 +1,21 @@
 <nav class="navbar sticky-top navbar-expand-lg bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">Logo</a>
+    <!-- Logo -->
+    <%= link_to 'Navbar', :class=>'navbar-brand' do %> 
+      <%= image_tag 'logo.png' %>
+    <% end %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto w-100 justify-content-end">
+        <!-- Features -->
         <li class="nav-item active">
           <a class="nav-link" href="#">NFTCAKELAB <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+        <!-- Admin -->
+          <a class="nav-link" href="#">Admin</a>
         <li class="nav-item">
           <a class="nav-link" href="/users/sign_in">Sign in</a>
         <li class="nav-item">
@@ -22,14 +26,13 @@
       </ul>
     </div>
   </div>
-
- 
-          <% if user_signed_in? %>
-          <%= link_to "Edit account", edit_user_registration_path %>
-          <%= link_to "Log out", destroy_user_session_path, method: :delete%>
-          <%= link_to "Events", events_path %>
-        <% else %>
-          <%= link_to "Login", new_user_session_path%>
-          <%= link_to "Sign Up", new_user_registration_path %>
-        <% end %>
+  <!-- a implémenter ulterieurement -->
+  <% if user_signed_in? %>
+    <%= link_to "Edit account", edit_user_registration_path %>
+    <%= link_to "Log out", destroy_user_session_path, method: :delete%>
+    <%= link_to "Events", events_path %>
+  <% else %>
+    <%= link_to "Login", new_user_session_path%>
+    <%= link_to "Sign Up", new_user_registration_path %>
+  <% end %>
 </nav>
